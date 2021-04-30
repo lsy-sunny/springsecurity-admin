@@ -25,6 +25,20 @@ npm run build
 # Build for production and view the bundle analyzer report
 npm run build --report
 ```
+当遇到以下错误的时候：
+ Node Sass does not yet support your current environment: Windows 64-bit with Unsupported runtime 
+ 
+ 解决方法如下：
+ 
+1.先卸载
+
+npm uninstall --save node-sass
+2.清除缓存
+
+npm cache clean -f
+3.升级node-sass模块
+
+npm install --save node-sass
 
 ## Demo
 
